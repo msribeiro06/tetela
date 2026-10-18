@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Para você 💫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── TELA 1: Intro ── -->
+  <div class="screen" id="intro">
+    <div class="intro-text">
+      <span>para</span>
+      <strong>Stela</strong>
+    </div>
+    <button class="open-btn" id="openBtn">Abrir ✨</button>
+  </div>
+
+  <!-- ── TELA 2: Coração 3D ── -->
+  <div class="screen hidden" id="heart-screen">
+    <canvas id="galaxy"></canvas>
+    <div class="heart-hint" id="heartHint">arraste para girar</div>
+    <button class="next-btn hidden" id="nextBtn">ler mensagem →</button>
+  </div>
+
+  <!-- ── TELA 3: Mensagem ── -->
+  <div class="screen hidden" id="msg-screen">
+    <canvas id="galaxy2"></canvas>
+    <div class="msg-wrap" id="msgWrap">
+      <div class="msg-inner">
+        <p class="msg-to">Stela,</p>
+        <div class="msg-body">
+          <p>Oi meu amor, te amo muito. Quero estar com você pra sempre.</p>
+          <p>Talvez às vezes eu soe repetitivo, mas é porque nem sempre sei como me expressar — desculpa por pegar no seu pé às vezes, tô tentando mudar isso.</p>
+          <p>Fico ansioso quando você some, principalmente depois de algum desentendimento, porque fico apreensivo e triste com o clima que se instala no nosso relacionamento. Fico com medo de perder a pessoa mais importante pra mim.</p>
+          <p>Espero que possamos nos entender e continuar firme no nosso relacionamento — que pode e vai trazer muita coisa boa pra gente, e momentos maravilhosos.</p>
+          <p>Stela, eu te amo mais que tudo e faço — e faria — qualquer coisa por você e por nós. Quero sempre te manter segura e feliz.</p>
+          <p>Pra isso, eu te peço: tenha um pouco mais de paciência comigo. Sei que não sou muito fácil de lidar, principalmente quando brigamos.</p>
+          <p>E se comunique. Sei que é difícil, mas temos que tentar — mesmo que não queiramos falar no momento, comunique avisando que você não quer falar sobre e que a gente resolve depois. Eu prometo respeitar isso, porém preciso do aviso.</p>
+          <p class="msg-final">Te amo e te quero só pra mim — como as ondas são do mar. 🌊</p>
+        </div>
+        <div class="msg-sig">— sempre seu, Marcelo 🤍</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
